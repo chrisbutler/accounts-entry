@@ -8,6 +8,7 @@
       {{/if}}
       <div class="entry col-sm-6 col-xs-10 col-sm-offset-3 col-xs-offset-1">
         <h3>{{i18n "createAccount"}}</h3>
+        {{#if otherLoginServices}}
           <p class="entry-signin-cta">{{i18n "ifYouAlreadyHaveAnAccount"}} <a href="/sign-in">{{i18n "signin"}}</a>.</p>
           <div class="entry-social">
             {{#each loginServices}}
